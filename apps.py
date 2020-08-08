@@ -7,7 +7,7 @@ players_height = []
 
 def clean_data():
     for height in players_copy[3]['height'](0 , 3):
-        height.appendint((players_height))
+        height.append(int(players_height))
         
 
 
