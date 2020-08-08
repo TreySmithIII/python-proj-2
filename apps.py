@@ -6,7 +6,7 @@ players_copy = constants.PLAYERS
 players_height = []
 
 def clean_data():
-    for height in players_copy(0 , 3):
+    for height in players_copy[3]['height'](0 , 3):
         height.appendint((players_height))
         
 
