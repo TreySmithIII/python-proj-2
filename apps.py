@@ -2,25 +2,18 @@ import constants
 
 team_copy = constants.TEAMS
 players_copy = constants.PLAYERS
-
-players_height = []
-
+height=[]
 def clean_data():
-    for height in players_copy[3]['height'](0 , 3):
-        height.append(int(players_height))
+    for player in players_copy:
+        player['height']=int(player['height'][0:2])
         
-
-
-
-    
-    
-    
-
-
         
-    
+        if player['experience'] == 'YES':
+            player['experience'] == True
+            
+        elif player['experience'] == 'NO':
+            player['experience'] == False
+            
 
 
-
-if __name__ == "__main__":
-    print('hello')
+clean_data()
